@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Code Quiz</title>
+  </head>
+
+  <body>
+    <main>
+      <header>
+        <!--Score-->
+        <section id="score">
+          
+        </section>
+        <!--Countdown timer-->
+        <section id="timer"></section>
+      </header>
+      <div class="homecontainer">
+        <h1>Coding Quiz Challenge</h1>
+        <p>
+          Try to answer the following code-related questions within the time
+          limit.
+        </p>
+        <p>
+          keep in mind that incorrect answers will penalize your score/time by
+          ten seconds!
+        </p>
+        <button onclick="startGame()">Start Quiz</button>
+      </div>
+      <div id="quiz"></div>
+
+      <p id="response"></p>
+      <div id="gameover">
+        <h2>Game over</h2>
+        <input type="text" placeholder="intials" />
+        <input type="button" value="go back" onclick="Go_home()" />
+        <input type="button" value="clear" onclick="clear_highscore()" />
+      </div>
+      <div class="highscores hide">
+        <h1 id="hs">High Scores</h1>
+        <ol id="list"></ol>
+        <button onclick="goback()">Go Back</button
+        ><button onclick="clearScores()">Clear High Scores</button>
+      </div>
+    </main>
+    <script src="./script.js"></script>
+  </body>
+</html>
